@@ -1,4 +1,4 @@
-package com.africa.semicolon.dtos.request;
+package com.africa.semicolon.exceptions;
 
 import com.africa.semicolon.exceptions.HadesContactException;
 

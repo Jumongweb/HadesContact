@@ -1,2 +1,8 @@
-package com.africa.semicolon.dtos.response;public class LogoutResponse {
+package com.africa.semicolon.dtos.response;
+
+import lombok.Data;
+
+@Data
+public class LogoutResponse {
+    private String message;
 }

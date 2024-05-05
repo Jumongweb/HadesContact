@@ -1,5 +1,6 @@
-package com.africa.semicolon.data.model;
+package com.africa.semicolon.services;
 
+import com.africa.semicolon.data.model.User;
 import com.africa.semicolon.data.repository.UserRepository;
 import com.africa.semicolon.dtos.request.CreateUserRequest;
 import com.africa.semicolon.dtos.request.LoginRequest;
@@ -7,7 +8,6 @@ import com.africa.semicolon.dtos.request.LogoutRequest;
 import com.africa.semicolon.exceptions.UserNotFoundException;
 import com.africa.semicolon.exceptions.InvalidUsernameOrPasswordException;
 import com.africa.semicolon.exceptions.UserAlreadyExist;
-import com.africa.semicolon.services.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-public class UserTest {
+public class UserServiceImplTest {
 
     @Autowired
     private UserService userService;
